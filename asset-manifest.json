@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0624442d.css",
-    "main.js": "/portfolio/static/js/main.369e6961.js",
+    "main.js": "/portfolio/static/js/main.28a2acaf.js",
     "static/js/770.074a10a6.chunk.js": "/portfolio/static/js/770.074a10a6.chunk.js",
     "static/js/453.ad7768ec.chunk.js": "/portfolio/static/js/453.ad7768ec.chunk.js",
     "static/media/CV_Joachim_Bernard_Lambert.pdf": "/portfolio/static/media/CV_Joachim_Bernard_Lambert.7d6ff1afeb06da108daa.pdf",
@@ -20,12 +20,12 @@
     "static/media/pre.svg": "/portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/portfolio/index.html",
     "main.0624442d.css.map": "/portfolio/static/css/main.0624442d.css.map",
-    "main.369e6961.js.map": "/portfolio/static/js/main.369e6961.js.map",
+    "main.28a2acaf.js.map": "/portfolio/static/js/main.28a2acaf.js.map",
     "770.074a10a6.chunk.js.map": "/portfolio/static/js/770.074a10a6.chunk.js.map",
     "453.ad7768ec.chunk.js.map": "/portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0624442d.css",
-    "static/js/main.369e6961.js"
+    "static/js/main.28a2acaf.js"
   ]
 }
