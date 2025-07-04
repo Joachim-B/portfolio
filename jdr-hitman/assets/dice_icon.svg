@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In  -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns1="http://sozi.baierouge.fr" enable-background="new -0.354 -1 221 212" xml:space="preserve" version="1.1" y="0px" x="0px" viewBox="-0.354 -1 221 212">
+<g enable-background="new    ">
+	<defs>
+		<polygon id="SVGID_3_" enable-background="new    " points="144.75 85.968 115.28 205.46 5.839 154.43 35.305 34.934"/>
+	</defs>
+	<use overflow="visible" xlink:href="#SVGID_3_" fill="#A0A0A0"/>
+	<clipPath id="SVGID_4_">
+		<use overflow="visible" xlink:href="#SVGID_3_"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_4_)">
+		<path d="m71.934 133.82c-6.891-3.213-10.973-11.918-9.117-19.442 1.854-7.523 8.945-11.019 15.836-7.806 6.892 3.213 10.975 11.919 9.119 19.442-1.856 7.53-8.948 11.03-15.838 7.81m72.816-47.854l-109.44-51.033-29.466 119.5 109.44 51.034 29.47-119.49" fill="#CCCCCC"/>
+		<path d="m78.652 106.58c-6.891-3.213-13.981 0.282-15.836 7.806s2.227 16.229 9.117 19.442c6.891 3.214 13.982-0.281 15.838-7.806 1.856-7.52-2.227-16.23-9.119-19.44" fill="#231F20"/>
+	</g>
+</g>
+<g enable-background="new    ">
+	<defs>
+		<polygon id="SVGID_2_" enable-background="new    " points="144.75 85.968 214.8 56.501 185.33 176 115.28 205.46"/>
+	</defs>
+	<use overflow="visible" xlink:href="#SVGID_2_" fill="#ADADAD"/>
+	<clipPath id="SVGID_5_">
+		<use overflow="visible" xlink:href="#SVGID_2_"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_5_)">
+		<path d="m148.3 112.32c1.627-6.599 6.081-13.27 9.95-14.897 3.87-1.628 5.686 2.405 4.059 9.004-1.627 6.6-6.082 13.271-9.953 14.898-3.88 1.62-5.69-2.41-4.06-9.01m9.73 21.61c1.628-6.6 6.084-13.271 9.953-14.898 3.868-1.627 5.686 2.405 4.059 9.004-1.627 6.6-6.084 13.271-9.953 14.898-3.87 1.63-5.68-2.4-4.06-9m9.74 21.61c1.628-6.604 6.083-13.271 9.952-14.898s5.688 2.4 4.059 9.004c-1.627 6.6-6.082 13.267-9.951 14.894-3.86 1.64-5.68-2.39-4.06-8.99m17.56 20.46l29.47-119.5-70.05 29.467-29.466 119.5 70.05-29.47" fill="#B3B3B3"/>
+		<path d="m181.78 149.65c1.629-6.604-0.189-10.631-4.059-9.004-3.869 1.628-8.324 8.295-9.952 14.898-1.628 6.599 0.191 10.627 4.06 8.999 3.87-1.64 8.33-8.3 9.95-14.9" fill="#231F20"/>
+		<path d="m172.04 128.04c1.627-6.599-0.19-10.631-4.059-9.004-3.869 1.628-8.325 8.299-9.953 14.898-1.627 6.599 0.191 10.631 4.059 9.004 3.87-1.63 8.33-8.3 9.95-14.9" fill="#231F20"/>
+		<path d="m162.3 106.43c1.627-6.599-0.188-10.632-4.059-9.004-3.869 1.628-8.323 8.299-9.95 14.897-1.628 6.599 0.188 10.632 4.056 9.005 3.87-1.62 8.33-8.29 9.95-14.89" fill="#231F20"/>
+	</g>
+</g>
+<g enable-background="new    ">
+	<defs>
+		<polygon id="SVGID_1_" enable-background="new    " points="35.305 34.934 105.35 5.468 214.8 56.501 144.75 85.968"/>
+	</defs>
+	<use overflow="visible" xlink:href="#SVGID_1_" fill="#C2C2C2"/>
+	<clipPath id="SVGID_6_">
+		<use overflow="visible" xlink:href="#SVGID_1_"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_6_)">
+		<path d="m73.221 42.279c-6.044-2.818-7.809-6.423-3.939-8.05 3.868-1.628 11.904-0.661 17.948 2.157s7.81 6.423 3.942 8.05c-3.869 1.628-11.907 0.661-17.951-2.157m52.539 24.498c-6.048-2.82-7.809-6.424-3.939-8.051 3.868-1.627 11.9-0.662 17.947 2.158 6.045 2.818 7.811 6.422 3.943 8.049-3.87 1.628-11.91 0.662-17.95-2.156m-9.46-19.321c-6.043-2.817-7.808-6.423-3.941-8.05s11.906-0.66 17.95 2.158 7.808 6.423 3.939 8.05c-3.87 1.626-11.91 0.66-17.95-2.158m-9.46-19.32c-6.044-2.818-7.809-6.424-3.939-8.051 3.868-1.627 11.906-0.661 17.951 2.156 6.043 2.818 7.807 6.424 3.939 8.051-3.86 1.628-11.9 0.663-17.95-2.156m52.54 24.497c-6.048-2.82-7.809-6.423-3.939-8.05 3.868-1.628 11.902-0.664 17.951 2.156 6.043 2.818 7.808 6.424 3.939 8.051-3.87 1.627-11.91 0.662-17.95-2.157m55.42 3.869l-109.45-51.034-70.05 29.466 109.44 51.034 70.06-29.466" fill="#E6E6E6"/>
+		<path d="m173.39 46.74c-6.049-2.82-14.083-3.784-17.951-2.156-3.869 1.627-2.108 5.229 3.939 8.05 6.044 2.818 14.082 3.784 17.951 2.157 3.87-1.627 2.1-5.233-3.94-8.051" fill="#231F20"/>
+		<path d="m130.31 41.564c-6.044-2.818-14.083-3.785-17.95-2.158-3.866 1.627-2.102 5.232 3.941 8.05 6.044 2.818 14.082 3.784 17.948 2.158 3.87-1.627 2.1-5.232-3.94-8.05" fill="#231F20"/>
+		<path d="m120.86 22.242c-6.045-2.817-14.083-3.783-17.951-2.156-3.869 1.627-2.104 5.232 3.939 8.051s14.082 3.784 17.951 2.156c3.86-1.627 2.1-5.233-3.94-8.051" fill="#231F20"/>
+		<path d="m87.229 36.386c-6.044-2.818-14.08-3.785-17.948-2.157-3.869 1.627-2.104 5.231 3.939 8.05s14.082 3.785 17.951 2.157c3.868-1.627 2.102-5.231-3.942-8.05" fill="#231F20"/>
+		<path d="m139.76 60.884c-6.047-2.82-14.079-3.785-17.947-2.158-3.869 1.627-2.108 5.23 3.939 8.051 6.043 2.818 14.082 3.784 17.951 2.156 3.87-1.627 2.11-5.23-3.94-8.049" fill="#231F20"/>
+	</g>
+</g>
+<line y2="34.933" x1="144.75" x2="35.305" stroke="#808080" y1="85.968" stroke-width="2" fill="none"/>
+<line y2="85.968" x1="115.79" x2="144.75" stroke="#808080" y1="203.39" stroke-width="2" fill="none"/>
+<line y2="85.968" x1="214.8" x2="144.75" stroke="#808080" y1="56.5" stroke-width="2" fill="none"/>
+<polygon stroke="#000000" stroke-width="10" points="35.305 34.933 105.35 5.468 214.8 56.5 185.33 176 115.28 205.46 5.839 154.43" fill="none"/>
+<metadata><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/><dc:publisher><cc:Agent rdf:about="http://openclipart.org/"><dc:title>Openclipart</dc:title></cc:Agent></dc:publisher><dc:title>A die</dc:title><dc:date>2008-06-14T10:46:22</dc:date><dc:description>A die.</dc:description><dc:source>https://openclipart.org/detail/17370/a-die-by-ytknick</dc:source><dc:creator><cc:Agent><dc:title>ytknick</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>dice</rdf:li><rdf:li>die</rdf:li><rdf:li>gambling</rdf:li><rdf:li>game</rdf:li><rdf:li>luck</rdf:li><rdf:li>play</rdf:li><rdf:li>random</rdf:li></rdf:Bag></dc:subject></cc:Work><cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/"><cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/><cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/><cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/></cc:License></rdf:RDF></metadata></svg>

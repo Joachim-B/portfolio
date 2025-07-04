@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDR Hitman</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="navigation.js"></script>
+</head>
+<body>
+    <header>
+        <div id="headerTitre">JDR Hitman</div>
+    </header>
+    <main>
+        <!-- Menu de choix des stats -->
+        <div id="navStatsContainer" class="navContainer">
+            <div class="accessNav" id="accessNavStats">
+                <img src="assets/dice-icon-menu.svg" alt="">
+            </div>
+            <div class="nav" id="navStats">
+                <ul>
+                    <li class="navMainButton" id="liStatPrecision"><span>Précision</span></li>
+                    <li class="navMainButton" id="liStatPhysique"><span>Physique</span></li>
+                    <li class="navMainButton" id="liStatChance"><span>Chance</span></li>
+                    <li class="navMainButton" id="liStatIntelligence"><span>Intelligence</span></li>
+                </ul>
+                <div class="navMainButton" id="navCustomDice">
+                    <img src="assets/dice-icon-menu.svg" alt=""><span>Dé custom</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu de choix du perso -->
+        <div id="navPersoContainer" class="navContainer">
+            <div class="accessNav" id="accessNavPerso">
+                <img src="assets/perso-icon-menu.svg" alt="">
+            </div>
+            <div class="nav" id="navPerso">
+                <div id="listPersos">
+                    <div class="menuSectionHeader"><span>Liste des personnages</span></div>
+                    <ul>
+                        <!-- Automatiquement généré -->
+                    </ul>
+                </div>
+                <div class="navMainButton" id="addPerso">
+                    <img src="assets/add-icon.svg" alt=""><span>Ajouter un personnage</span>
+                </div>
+                <div id="persoInfos">
+                    <div class="menuSectionHeader"><span>Infos perso</span></div>
+                    <div class="menuSectionContent">
+                        <div id="persoInfosName">
+                            <label for="persoName">Nom&nbsp;:</label>
+                            <input type="text" name="persoName" value="Personnage 1">
+                        </div>
+                        <div id="persoInfosBackground">
+                            <label for="backgroundLink">Lien du background (url) :</label>
+                            <input type="text" name="backgroundLink">
+                        </div>
+                        <div id="persoDelete">
+                            <span>Supprimer le personnage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background foncé -->
+        <div id="menuOpenBackground"></div>
+
+        
+        <!-- Pop-up de résultat -->
+        <div id="popupResult">
+            <div id="popupResultClassic">
+                <span class="popupResultNumber"></span>
+                <span id="popupScoreToBeat"></span>
+            </div>
+            <div id="popupResultCustom">
+                <span class="popupResultNumberCustom"></span>
+            </div>
+            <ul id="popupMainContent">
+            </ul>
+            <div id="popupOK">
+                <span>OK</span>
+            </div>
+        </div>
+
+        <!-- Contenu principal -->
+
+        <!-- Nom du personnage -->
+        <div id="headerPersoName">Personnage 1</div>
+
+        <!-- Precision -->
+
+        <div id="Precision">
+            <div class="sectionTitre">Précision</div>
+            <div class="sectionStats">
+                <div class="palier">
+                    <label for="selectPalier" class="palierLabel">Palier :</label>
+                    <div>
+                        <select name="selectPalier">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span>(30%)</span>
+                    </div>
+                </div>
+                <div class="statsCommuns">
+                    <div class="bonusMalus">
+                        <label for="bonusMalus">Bonus / Malus :</label>
+                        <input type="text" name="bonusMalus" inputmode="numeric" value="0"/>
+                    </div>
+                    <div class="stress">
+                        <label for="selectStress">Stress :</label>
+                        <select name="selectStress" class="selectStress">
+                            <!-- Auto-généré par JS -->
+                        </select>
+                    </div>
+                </div>
+                <div class="throwDice" id="dicePrecision">
+                    <img src="assets/dice_icon.svg" alt="">
+                </div>
+            </div>
+            <div class="historiqueDice" id="histoPrecision">
+                <div class="histoHeader">
+                    <span>Historique</span>
+                </div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Physique -->
+
+        <div id="Physique">
+            <div class="sectionTitre">Physique</div>
+            <div class="sectionStats">
+                <div class="palier">
+                    <label for="selectPalier" class="palierLabel">Palier :</label>
+                    <div>
+                        <select name="selectPalier">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span>(30%)</span>
+                    </div>
+                </div>
+                <div class="statsCommuns">
+                    <div class="bonusMalus">
+                        <label for="bonusMalus">Bonus / Malus :</label>
+                        <input type="text" name="bonusMalus" inputmode="numeric" value="0"/>
+                    </div>
+                    <div class="stress">
+                        <label for="selectStress">Stress :</label>
+                        <select name="selectStress" class="selectStress">
+                            <!-- Auto-généré par JS -->
+                        </select>
+                    </div>
+                </div>
+                <div class="corpsACorps">
+                    <div class="corpsACorpsFirstRow">
+                        <div class="corpsACorpsCheck">
+                            <label for="corpsACorpsCheck">Corps à corps ?</label>
+                            <input type="checkbox" name="corpsACorpsCheck">
+                        </div>
+                        <div class="corpsACorpsPV">
+                            <label for="corpsACorpsPV">Reste PV :</label>
+                            <input type="text" inputmode="numeric" name="corpsACorpsPV" value="0">
+                        </div>  
+                    </div>
+                    <div class="corpsACorpsMode">
+                        <div>
+                            <input type="radio" name="corpsACorpsMode" checked>
+                            <label for="corpsACorpsMode">Attaque</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="corpsACorpsMode">
+                            <label for="corpsACorpsMode">Esquive</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="throwDice" id="dicePhysique">
+                    <img src="assets/dice_icon.svg" alt="">
+                </div>
+            </div>
+            <div class="historiqueDice" id="histoPhysique">
+                <div class="histoHeader">
+                    <span>Historique</span>
+                </div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Chance -->
+
+        <div id="Chance">
+            <div class="sectionTitre">Chance</div>
+            <div class="sectionStats">
+                <div class="palier">
+                    <label for="selectPalier" class="palierLabel">Palier :</label>
+                    <div>
+                        <select name="selectPalier">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span>(30%)</span>
+                    </div>
+                </div>
+                <div class="statsCommuns">
+                    <div class="bonusMalus">
+                        <label for="bonusMalus">Bonus / Malus :</label>
+                        <input type="text" name="bonusMalus" inputmode="numeric" value="0"/>
+                    </div>
+                    <div class="stress">
+                        <label for="selectStress">Stress :</label>
+                        <select name="selectStress" class="selectStress">
+                            <!-- Auto-généré par JS -->
+                        </select>
+                    </div>
+                </div>
+                <div class="throwDice" id="diceChance">
+                    <img src="assets/dice_icon.svg" alt="">
+                </div>
+            </div>
+            <div class="historiqueDice" id="histoChance">
+                <div class="histoHeader">
+                    <span>Historique</span>
+                </div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Intelligence -->
+
+        <div id="Intelligence">
+            <div class="sectionTitre">Intelligence</div>
+            <div class="sectionStats">
+                <div class="palier">
+                    <label for="selectPalier" class="palierLabel">Palier :</label>
+                    <div>
+                        <select name="selectPalier">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span>(30%)</span>
+                    </div>
+                </div>
+                <div class="statsCommuns">
+                    <div class="bonusMalus">
+                        <label for="bonusMalus">Bonus / Malus :</label>
+                        <input type="text" name="bonusMalus" inputmode="numeric" value="0"/>
+                    </div>
+                    <div class="stress">
+                        <label for="selectStress">Stress :</label>
+                        <select name="selectStress" class="selectStress">
+                            <!-- Auto-généré par JS -->
+                        </select>
+                    </div>
+                </div>
+                <div class="throwDice" id="diceIntelligence">
+                    <img src="assets/dice_icon.svg" alt="">
+                </div>
+            </div>
+            <div class="historiqueDice" id="histoIntelligence">
+                <div class="histoHeader">
+                    <span>Historique</span>
+                </div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dé custom -->
+
+        <div id="CustomDice">
+            <div class="sectionTitre">Dé custom</div>
+            <div class="sectionStats">
+                <div class="customStatsValue">
+                    <div>
+                        <label for="customMinValue">Min :</label>
+                        <input type="text" class="customMinValue" name="customMinValue" inputmode="numeric" value="1"/>
+                    </div>
+                    <div>
+                        <label for="customMinValue">Max :</label>
+                        <input type="text" class="customMaxValue" name="customMinValue" inputmode="numeric" value="100"/>
+                    </div>
+                </div>
+                <div class="throwDice" id="diceCustom">
+                    <img src="assets/dice_icon.svg" alt="">
+                </div>
+            </div>
+            <div class="historiqueDice" id="histoCustom">
+                <div class="histoHeader">
+                    <span>Historique</span>
+                </div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

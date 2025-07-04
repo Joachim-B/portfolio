@@ -1,0 +1,187 @@
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+#replay {
+    display: none;
+    width: 120px;
+    height: 80px;
+    border : solid grey 4px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 15px;
+    color: red;
+    background-color: orange;
+}
+
+#mastermind {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 250px;
+    margin: auto;
+}
+
+.mastermindPart {
+    display: flex;
+    min-height: 50px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    border-bottom: rgb(56, 56, 56) solid 1px;
+}
+
+.balls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    width: 200px;
+}
+
+.balls > div {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    border : solid black 1px;
+    background-color: black;
+}
+
+.hints {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    height: 50px;
+    width: 50px;
+    border-left: solid black 1px;
+    gap: 5px;
+}
+
+.hints > div {
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    border : solid black 1px;
+    background-color: black;
+}
+
+#answer {
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgb(56, 56, 56);
+}
+
+#answer > div {
+    display: none;
+}
+
+#bottom {
+    background-color: rgb(56, 56, 56);
+    min-height: 30px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#rendu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(201, 201, 201);
+    border-radius: 20px;
+    width: 500px;
+    min-height: 80px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.rballs {
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+    border : solid black 1px;
+    background-color: white;
+}
+
+.rbutton {
+    display: table;
+    width: 50px;
+    height: 60px;
+    background-color: rgb(243, 243, 243);
+    border: solid black 1px;
+    border-radius: 10px;
+    color: grey;
+    text-align: center;
+}
+
+.rbutton > span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#erase {
+    margin-right: 20px;
+    
+}
+
+#send {
+    margin-left: 20px;
+}
+
+
+
+#clavier {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 450px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.touches {
+    min-width: 100px;
+    min-height: 150px;
+    border: solid black 1px;
+}
+
+#tred {
+    background-color: red;
+    border-radius: 10px 0px 0px 0px;
+}
+
+#tblue {
+    background-color: blue;
+}
+
+#tcyan {
+    background-color: cyan;
+}
+
+#tyellow {
+    background-color: yellow;
+    border-radius: 0px 10px 0px 0px;
+}
+
+#tgreen {
+    background-color: green;
+    border-radius: 0px 0px 0px 10px;
+}
+
+#tlime {
+    background-color: lime;
+}
+
+#tpink {
+    background-color: pink;
+}
+
+#tgrey {
+    background-color: rgb(180, 180, 180);
+    border-radius: 0px 0px 10px 0px;
+}

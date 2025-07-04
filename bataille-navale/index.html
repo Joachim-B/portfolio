@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="batailleNavale.js"></script>
+    <link rel="stylesheet" href="batailleNavale.css">
+    <link rel="icon" href="img/2boat-2-west.png">
+    <title>Bataille navale</title>
+</head>
+<body>
+    <h1>Bataille navale !</h1>
+    <h2>Choisissez votre nombre de bateaux et confirmez !</h2>
+    <h5>Restez appuyé sur la touche Ctrl et tournez la molette de la souris dans un sens ou dans l'autre pour zoomer ou dézoomer.</h4>
+    <div id="jeuGlobal">
+        <div id="firstBoard">
+            <div class="coinGauche"></div>
+            <div class="abscisseX">
+                <div><p>1</p></div>
+                <div><p>2</p></div>
+                <div><p>3</p></div>
+                <div><p>4</p></div>
+                <div><p>5</p></div>
+                <div><p>6</p></div>
+                <div><p>7</p></div>
+                <div><p>8</p></div>
+                <div><p>9</p></div>
+                <div><p>10</p></div>
+            </div>
+            <div class="ordonneeY">
+                <div><p>A</p></div>
+                <div><p>B</p></div>
+                <div><p>C</p></div>
+                <div><p>D</p></div>
+                <div><p>E</p></div>
+                <div><p>F</p></div>
+                <div><p>G</p></div>
+                <div><p>H</p></div>
+                <div><p>I</p></div>
+                <div><p>J</p></div>
+            </div>
+            <div class="board"> <!-- Divs à l'intérieur intégrés par le JS -->
+                
+            </div>
+            <div class="botBoard">
+
+            </div>
+            <div id="gamemodeChoice">
+                <div>
+                    <div id="gamemodeText">
+                        <h2><b>Gamemode :</b></h2>
+                    </div>
+                    <div class="gamemodeButton" id="solo" onclick="gamemode('solo')">
+                        <span>Solo</span>
+                    </div>
+                    <div class="gamemodeButton" id="againstBot" onclick="gamemode('bot')">
+                        <span>Against bot</span>
+                    </div>
+                    <div class="gamemodeButton" id="2players" onclick="gamemode('2players')">
+                        <span>2 players</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <div id="commentaires">
+                <div id="secondBoard" onclick="swapBoards()">
+                    <div class="coinGauche"></div>
+                    <div class="abscisseX">
+                    </div>
+                    <div class="ordonneeY">
+                    </div>
+                    <div class="board"> <!-- Divs à l'intérieur intégrés par le JS -->
+                
+                    </div>
+                    <div class="botBoard">
+
+                    </div>
+                </div>
+                <div id="mainComment">
+                    <div id="retourConsole">
+                        <div id="boatPreview"></div>
+                        <div id="principalText"></div>
+                    </div>
+                    <div id="showBoats" class="confirmReset" onclick="buttonShowBoats('button')"><p class="confirmResetText">Show boats</p></div>
+                </div>
+            </div>
+    
+            <div id="settings">
+                <div id="resetBoatAmount" class="confirmReset" onclick="resetConfirm('reset')"><p class="confirmResetText">Reset</p></div>
+    
+                <div id="size2" class="sizeSetting">
+                    <div class="sizeBasic">
+                        <div class="boatAmount"><span>Amount :</span><span>0</span></div>
+                        <div class="upDownContainer">
+                            <button class="up" onclick="changeNbBoats('up2')"><span>+1</span></button>
+                            <button class="down" onclick="changeNbBoats('down2')"><span>-1</span></button>
+                        </div>
+                    </div>
+                    <div class="boatSizePic" id="boat2Pic">
+                    </div>
+                </div>
+    
+                <div id="size3" class="sizeSetting">
+                    <div class="sizeBasic">
+                        <div class="boatAmount"><span>Amount :</span><span>0</span></div>
+                        <div class="upDownContainer">
+                            <button class="up" onclick="changeNbBoats('up3')"><span>+1</span></button>
+                            <button class="down" onclick="changeNbBoats('down3')"><span>-1</span></button>
+                        </div>
+                    </div>
+                    <div class="boatSizePic" id="boat3Pic">
+                    </div>
+                </div>
+                
+                <div id="size4" class="sizeSetting">
+                    <div class="sizeBasic">
+                        <div class="boatAmount"><span>Amount :</span><span>0</span></div>
+                        <div class="upDownContainer">
+                            <button class="up" onclick="changeNbBoats('up4')"><span>+1</span></button>
+                            <button class="down" onclick="changeNbBoats('down4')"><span>-1</span></button>
+                        </div>
+                    </div>
+                    <div class="boatSizePic" id="boat4Pic">
+                    </div>
+                </div>
+    
+                <div id="size5" class="sizeSetting">
+                    <div class="sizeBasic">
+                        <div class="boatAmount"><span>Amount :</span><span>0</span></div>
+                        <div class="upDownContainer">
+                            <button class="up" onclick="changeNbBoats('up5')"><span>+1</span></button>
+                            <button class="down" onclick="changeNbBoats('down5')"><span>-1</span></button>
+                        </div>
+                    </div>
+                    <div class="boatSizePic" id="boat5Pic">
+                    </div>
+                </div>
+                
+                <div id="confirmBoatAmount" class="confirmReset" onclick="resetConfirm('confirm')"><p class="confirmResetText">Confirm</p></div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
