@@ -1,0 +1,529 @@
+/* COMMUNS */
+body {
+    font-family: "Montserrat", "Roboto";
+    color: #f4f4f4;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url(assets/default-background.jpg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: brightness(40%);
+    background-attachment: fixed;
+
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+main {
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+select, input[type=number], input[type=text] {
+    height: 25px;
+    color: #891111;
+    font-family: "Montserrat";
+    font-weight: bold;
+    border-radius: 4px;
+    
+    border: solid rgb(118, 118, 118) 1px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   -webkit-appearance: "Always Show Up/Down Arrows";
+   opacity: 1;
+}
+
+
+/* CLASSES */
+
+.accessNav {
+    height: 50px;
+    width: 50px;
+    background-color: #252525;
+    border: solid #1d1d1d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessNav img {
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(116deg) brightness(110%) contrast(0.7);
+}
+
+.bonusMalus input {
+    width: 55px;
+}
+
+.corpsACorps {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.corpsACorpsFirstRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 25px;
+}
+
+.corpsACorpsCheck {
+    display: flex;
+    align-items: center;
+}
+
+.corpsACorpsMode {
+    display: none;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.corpsACorpsPV {
+    display: none;
+}
+
+.corpsACorpsPV input {
+    width: 50px;
+}
+
+.customStatsValue {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.customStatsValue > div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.customStatsValue > div input {
+    width: 70px;
+    height: 30px;
+}
+
+.histoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #122688;
+    height: 40px;
+    border-bottom: solid 5px #0e2076;
+}
+
+.histoNumber {
+    display: inline-block;
+    min-width: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0 5px;
+}
+
+.histoResult {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+.histoResultInfos {
+    font-size: 0.85em;
+    overflow-x: hidden;
+    word-break: break-word;
+    margin: 0 10px;
+}
+
+.histoResultLine {
+    height: 25px;
+    border-right: solid 1px #0d1c64;
+    box-sizing: content-box;
+}
+
+.historiqueDice {
+    display: flex;
+    flex-flow: column;
+    width: 250px;
+    height: 260px;
+    margin: 30px auto 0 auto;
+    background: radial-gradient(circle, #4e5ca3 0%, #132aa0 60%, #0d1c64 90%);
+    box-shadow: 1px 5px 10px 2px #0c0c0c;
+    border: solid 5px #0e2076;
+}
+
+.historiqueDice ul {
+    overflow-y: auto;
+    list-style: none;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.menuSectionHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    border: solid #1d1d1d;
+    border-width: 2px 0px;
+    font-size: 0.9em;
+}
+
+.menuSectionContent {
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+    padding: 25px 10px;
+}
+
+.nav {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    background-color: #252525;
+    padding-top: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: max-width 180ms;
+}
+
+.nav > * {
+    width: 270px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navContainer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.navMainButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45px;
+    cursor: pointer;
+    overflow-x: hidden;
+    word-break: break-word;
+    padding: 10px;
+    text-align: center;
+}
+
+.navMainButton img {
+    display: inline;
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(116deg) brightness(110%) contrast(0.7);
+    margin: 0 6px;
+}
+
+.numberResultCritSuccess {
+    color: #ddb122;
+}
+
+.numberResultCritLoss {
+    color: #dd7c22;
+}
+
+.numberResultSuccess {
+    color: #2ac944;
+}
+
+.numberResultLoss {
+    color: #bd1313 ;
+}
+
+.palier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #ddb122;
+}
+
+.palier select {
+    height: 35px;
+    width: 45px;
+    color: #891111;
+    font-family: "Montserrat";
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.palier span {
+    display: inline-block;
+    width: 38px;
+}
+
+.palierLabel {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.popupResultNumber {
+    font-size: 6em;
+    padding-left: 70px;
+}
+
+.popupResultNumberCustom {
+    font-size: 6em;
+}
+
+.popupResultErreur {
+    font-size: 5em;
+    color: #bd1313 ;
+}
+
+.sectionStats {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 18px 10px;
+    max-width: 330px;
+    margin: auto;
+    border: solid 1px #252525;
+    border-radius: 6px;
+    gap: 20px;
+    background-color: #0c0c0c50;
+    font-size: 1em;
+}
+
+.sectionTitre {
+    margin: 20px auto;
+    text-align: center;
+    color: #891111;
+    font-weight: bold;
+    font-size: 1.45em;
+    text-decoration: underline;
+}
+
+.statsCommuns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.throwDice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 220px;
+    margin: 30px auto 0 auto;
+    background: radial-gradient(circle, #f5f5f5 0%, #b01111 40%, #791111 90%); 
+    border: solid #891111 6px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.throwDice img {
+    height: 90%;
+}
+
+
+
+/* ID */
+
+#accessNavPerso {
+    border-radius: 3px 0 0 3px;
+    border-width: 2px 0 2px 2px;
+    cursor: pointer;
+}
+
+#accessNavStats {
+    border-radius: 0 3px 3px 0;
+    border-width: 2px 2px 2px 0;
+    order: 2;
+    cursor: pointer;
+}
+
+#addPerso {
+    background-color: #303030;
+    border: solid #1d1d1d;
+    border-width: 2px 0px;
+}
+
+#headerTitre {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #891111;
+}
+
+#headerPersoName {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5em;
+    overflow-x: hidden;
+    word-break: break-word;
+}
+
+#listPersos {
+    padding-bottom: 15px;
+    border-bottom: solid 2px #1d1d1d;
+}
+
+#listPersos ul {
+    overflow-y: auto;
+    height: 290px;
+}
+
+#menuOpenBackground {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: #0e0e0eb4;
+    z-index: 10;
+    opacity: 0%;
+}
+
+#navPerso {
+    max-width: 0px;
+}
+
+#navStats {
+    order: 1;
+    max-width: 0px;
+}
+
+#navStatsContainer {
+    left: 0px;
+    z-index: 1;
+}
+
+#navPersoContainer {
+    right: 0px;
+    z-index: 1;
+}
+
+#persoDelete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 145px;
+    border: solid 3px #580808;
+    background-color: #791111;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+#persoInfos {
+    background-color: #303030;
+}
+
+#persoInfosName {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#persoInfosName input {
+    flex-grow: 1;
+}
+
+#persoInfosBackground {
+    display: flex;
+    flex-flow: column;
+    gap: 3px;
+}
+
+#persoInfosBackground input {
+    width: 100%;
+}
+
+#popupMainContent {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 15px 15px 20px 30px;
+    margin: 0;
+    max-height: 130px;
+    overflow-y: auto;
+    gap: 18px;
+    font-size: 1.2em;
+}
+
+#popupOK {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 200px;
+    margin-bottom: 10px;
+    background: radial-gradient(circle, #b63737 0%, #7c0b0b 50%, #580808 90%); 
+    border: solid #690c0c 6px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+#popupResult {
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #252525;
+    border: solid 3px #1d1d1d;
+    border-radius: 15px;
+    width: 320px;
+    height: fit-content;
+    z-index: 11;
+    transition: all 180ms;
+}
+
+#popupScoreToBeat {
+    display: inline-block;
+    width: 70px;
+    font-size: 1.4em;
+
+}
+
+/* ID Stats */
+
+#Physique {
+    display: none;
+}
+
+#Chance {
+    display: none;
+}
+
+#Intelligence {
+    display: none;
+}
+
+#CustomDice {
+    display: none;
+}

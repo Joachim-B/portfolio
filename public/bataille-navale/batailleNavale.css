@@ -1,0 +1,363 @@
+body {
+    max-width: 800px;
+    margin: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+}
+
+h2 {
+    color: #3a3a3a;
+}
+
+h5 {
+    color: red;
+}
+
+#jeuGlobal {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 750px;
+    padding: 25px;
+    background-color: grey;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#firstBoard {
+    display: flex;
+    flex-flow: row wrap;
+    height: 750px;
+    width: 750px;
+}
+
+.coinGauche {
+    height: 6%;
+    width: 6%;
+    background-color: lightblue;
+}
+
+.abscisseX {
+    display: flex;
+    height: 6%;
+    width: 94%;
+    background-color: lightskyblue;
+}
+
+.abscisseX > div {
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+
+.ordonneeY {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 94%;
+    width: 6%;
+    background-color: lightskyblue;
+}
+
+.ordonneeY > div {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.board {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    width: 94%;
+    height: 94%;
+    background-color: white;
+}
+
+.board > div {
+    height: 10%;
+    width: 10%;
+    background-color: lightseagreen;
+    background-size: contain;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : white;
+}
+
+.board > div:hover {
+    opacity: 60%;
+}
+
+.botBoard {
+    display: none;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    width: 94%;
+    height: 94%;
+    background-color: white;
+}
+
+.botBoard > div {
+    height: 10%;
+    width: 10%;
+    background-color: lightseagreen;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : white;
+}
+
+.botBoard > div:hover {
+    opacity: 60%;
+}
+
+#gamemodeChoice {
+    display : none;
+    background-color: rgb(23, 128, 122);
+    width: 94%;
+    height: 94%;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+#gamemodeChoice > div {
+    display: flex;
+    width: 35%;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+}
+
+#gamemodeText {
+    position: relative;
+    top: 8px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+#gamemodeText h2 {
+    color: rgb(168, 0, 0);
+    
+}
+
+.gamemodeButton {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    border : solid black 1px;
+    width: 60%;
+    height :60px;
+    text-align: center;
+    font-size: 1.3em;
+    color: darkred;
+}
+
+#bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: lightsteelblue;
+    width: 100%;
+    height: auto;
+}
+
+#commentaires {
+    display: none;
+    background-color: lightsteelblue;
+    width: 750px;
+    min-height: auto;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+#secondBoard {
+    display: none;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border : solid black 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#secondBoard div:hover {
+    opacity: 100%;
+}
+
+#mainComment {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 550px;
+    margin: 20px;
+    gap: 20px;
+}
+
+#retourConsole {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    border : solid black 1px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    height :70px;
+    width: 700px;
+    text-align: center;
+    color: rgb(201, 0, 0);
+}
+
+#boatPreview {
+    display: none;
+    width: 18px;
+    height: 90px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#principalText {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#principalText > span{
+    margin: 3px;
+}
+
+#settings {
+    display: flex;
+    background-color: lightsteelblue;
+    width: 750px;
+    gap: 11px; 
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sizeSetting {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    border : solid black 1px;
+    justify-content: center;
+    align-items: center ;
+    padding: 3px;
+    gap: 4px;
+}
+
+.sizeBasic {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap:1%;
+}
+
+.boatSizePic {
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: burlywood solid 3px;
+    border-radius: 4px;
+}
+
+#boat2Pic {
+    background-image: url('img/boat-all/2boat-all-side.png');
+    width: 44px;
+}
+
+#boat3Pic {
+    background-image: url('img/boat-all/3boat-all-side.png');
+    width: 66px;
+}
+
+#boat4Pic {
+    background-image: url('img/boat-all/4boat-all-side.png');
+    width: 88px;
+}
+
+#boat5Pic {
+    background-image: url('img/boat-all/5boat-all-side.png');
+    width: 110px;
+}
+
+.upDownContainer {
+    display: flex;
+    background-color: burlywood;
+    flex-flow: column nowrap;
+    height: 95%;
+    width: 40px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.up {
+    height: 40%;
+    width: 80%;
+    background-color: beige;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px; 
+}
+
+.down {
+    height: 40%;
+    width: 80%;
+    background-color: beige;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+}
+
+button span {
+    position: relative;
+    bottom: 2px;
+}
+
+.boatAmount {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    min-width: 80px;
+}
+
+.confirmReset {
+    display: table;
+    background-color: burlywood;
+    border-radius: 15px;
+    border : solid black 1px;
+    padding: 3px;
+    width: 67px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#confirmBoatAmount {
+    opacity: 20%;
+}
+
+.confirmResetText {
+    display: table-cell;
+    vertical-align: middle;
+    color :blanchedalmond
+}

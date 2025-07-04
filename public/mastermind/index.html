@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Mastermind</title>
+        <link rel="stylesheet" href="mastermind.css">
+        <script src="mastermind.js"></script>
+    </head>
+    <body>
+        <h1>Mastermind !</h1>
+        <h2>Trouvez la bonne combinaison de couleur en vous aidant des indices !</h2>
+        <div id="replay" onclick="restartGame()"><p><b>Replay</b></p></div>
+        <div id="mastermind">
+            <div id="answer" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+            </div>
+            <div id="guess12" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess11" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess10" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess9" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess8" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess7" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess6" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess5" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess4" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess3" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess2" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="guess1" class="mastermindPart">
+                <div class="balls">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+                    <div class="ball3"></div>
+                    <div class="ball4"></div>
+                </div>
+                <div class="hints">
+                    <div class="hint1"></div>
+                    <div class="hint2"></div>
+                    <div class="hint3"></div>
+                    <div class="hint4"></div>
+                </div>
+            </div>
+            <div id="bottom" class="mastermindPart"></div>
+        </div>
+        <div id="rendu">
+            <div id="erase" class="rbutton" onclick="sendErase('erase')"><span>Go back</span></div>
+            <div class = rballs id="rball1"></div>
+            <div class = rballs id="rball2"></div>
+            <div class = rballs id="rball3"></div>
+            <div class = rballs id="rball4"></div>
+            <div id="send" class="rbutton" onclick="sendErase('send')"><span>Send answer</span></div>
+        </div>
+        <div id="clavier">
+            <div class="touches" id="tred" onclick="clickTouches('red')"></div>
+            <div class="touches" id="tblue"onclick="clickTouches('blue')"></div>
+            <div class="touches" id="tcyan" onclick="clickTouches('cyan')"></div>
+            <div class="touches" id="tyellow" onclick="clickTouches('yellow')"></div>
+            <div class="touches" id="tgreen" onclick="clickTouches('green')"></div>
+            <div class="touches" id="tlime" onclick="clickTouches('lime')"></div>
+            <div class="touches" id="tpink" onclick="clickTouches('pink')"></div>
+            <div class="touches" id="tgrey" onclick="clickTouches('rgb(180,180,180)')"></div>
+        </div>
+    </body>
