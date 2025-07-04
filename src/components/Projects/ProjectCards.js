@@ -20,7 +20,7 @@ function ProjectCards(props) {
           </Button>
         )}
         {props.dlLink && (
-          <a href={"/portfolio" + props.dlLink} download target="_blank" rel="noopener noreferrer">
+          <a href={`/portfolio${props.dlLink}`} download target="_blank" rel="noopener noreferrer">
             <Button variant="primary">
               <IoMdDownload /> Télécharger le code
             </Button>
@@ -34,7 +34,7 @@ function ProjectCards(props) {
         {props.demoLink && (
           <Button
             variant="primary"
-            href={"/portfolio" + props.demoLink}
+            href={`/portfolio${props.demoLink}`}
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
