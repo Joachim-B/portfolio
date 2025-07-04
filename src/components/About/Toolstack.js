@@ -6,6 +6,8 @@ import {
   SiGitextensions,
   SiMicrosoftoffice,
   SiSwagger,
+  SiGitlab,
+  SiGithub,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -28,6 +30,12 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSwagger />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGithub />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGitlab />
       </Col>
     </Row>
   );

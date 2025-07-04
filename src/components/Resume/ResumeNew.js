@@ -16,7 +16,8 @@ function ResumeNew() {
     setWidth(window.innerWidth);
   }, []);
 
-  return (
+  try {
+return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
@@ -58,6 +59,10 @@ function ResumeNew() {
       </Container>
     </div>
   );
+  }
+  catch (err) {
+    console.error(err)
+  }
 }
 
 export default ResumeNew;

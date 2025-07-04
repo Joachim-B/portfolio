@@ -9,7 +9,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Bonjour, Je suis <span className="purple">Joachim Bernard-Lambert </span>
-            de <span className="purple"> Ploërmel, France.</span>
+            de <span className="purple"> Ploërmel, en Bretagne.</span>
             <br />
             Je suis actuellement à la recherche de nouvelles opportunités d'<span className="purple"> alternance</span>.
             <br />

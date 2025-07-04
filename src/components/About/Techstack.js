@@ -9,12 +9,13 @@ import {
   DiHtml5,
   DiCss3,
   DiJavascript,
+  DiPhp,
+  DiDocker,
 } from "react-icons/di";
 import {
   SiTypescript,
   SiMysql,
   SiDotnet,
-  SiUnity,
   SiSqlite
 } from "react-icons/si";
 
@@ -61,7 +62,10 @@ function Techstack() {
         <DiJavascript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiUnity />
+        <DiPhp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiDocker />
       </Col>
     </Row>
   );
