@@ -585,6 +585,20 @@ button:focus {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-label {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #ffffff;
+  text-align: center;
+}
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;

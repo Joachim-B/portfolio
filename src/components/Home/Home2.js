@@ -12,7 +12,7 @@ function Home2() {
               UNE PETITE <span className="purple">PRÉSENTATION</span> S'IMPOSE
             </h1>
             <p className="home-about-body">
-              Je suis tombé amoureux de la programmation, et j'ai peut-être appris quelque chose, je pense… 🤷‍♂️
+              Je suis tombé amoureux de la programmation, et il semblerait que j'en ai retenu quelque chose… 🤷‍♂️
               <br />
               <br />Je maîtrise des classiques comme
               <i>
@@ -22,12 +22,16 @@ function Home2() {
               <br />
               Mes domaines d'intérêt sont la création de&nbsp;
               <i>
-                <b className="purple">programmes améliorant l'expérience utilisateur</b> ainsi que
-                tout ce qui touche à l'
+                <b className="purple">programmes améliorant l'expérience utilisateur </b>
+              </i>
+              ainsi que
+              tout ce qui touche à l'
+              <i>
                 <b className="purple">
-                  optimisation et la clarté du code.
+                  optimisation et la clarté du code
                 </b>
               </i>
+              .
               <br />
               <br />
               Dès que possible, j'applique aussi ma passion pour le développement d'outils facilitant le quotidien et ouvrant des possibilités.
