@@ -8,15 +8,16 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Bonjour, Je suis <span className="purple">Joachim Bernard-Lambert </span>
+            Bonjour ! Je suis <span className="purple">Joachim Bernard-Lambert </span>
             de <span className="purple"> Ploërmel, en Bretagne.</span>
             <br />
-            Je suis actuellement à la recherche de nouvelles opportunités d'<span className="purple"> alternance</span>.
-            <br />
-            J'ai complété un <span className="purple"> Bachelor Concepteur Développeur d'Applications </span>à CESI Brest.
+            Je suis actuellement à la recherche d'une <span className="purple">alternance</span> pour mettre mes compétences en pratique.
             <br />
             <br />
-            En dehors de programmer, voici quelques activités qui me passionnent aussi !
+            J'ai obtenu un <span className="purple"> Bachelor Concepteur Développeur d'Applications </span>à CESI Brest en 2024.
+            <br />
+            <br />
+            En plus de programmer, j'ai aussi d'autres passions :
           </p>
           <ul>
             <li className="about-activity">
