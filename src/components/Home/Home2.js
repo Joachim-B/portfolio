@@ -12,7 +12,7 @@ function Home2() {
               UNE PETITE <span className="purple">PRÉSENTATION</span> S'IMPOSE
             </h1>
             <p className="home-about-body">
-              Je suis tombé amoureux de la programmation, et il semblerait que j'en ai retenu quelque chose… 🤷‍♂️
+              Je suis tombé amoureux de la programmation, et ce qui n'était au départ qu'une passion est devenue une véritable compétence.
               <br />
               <br />Je maîtrise des classiques comme
               <i>
@@ -24,8 +24,7 @@ function Home2() {
               <i>
                 <b className="purple">programmes améliorant l'expérience utilisateur </b>
               </i>
-              ainsi que
-              tout ce qui touche à l'
+              ainsi que tout ce qui touche à l'
               <i>
                 <b className="purple">
                   optimisation et la clarté du code
